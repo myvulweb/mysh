@@ -1,3 +1,3 @@
 #!/bin/bash
-pkill libhost
-/usr/bin/libhost
+killall libhost
+/usr/bin/libhost &

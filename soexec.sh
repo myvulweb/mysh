@@ -1,3 +1,3 @@
 #!/bin/bash
-pkill soexec
-nohup soexec &
+killall soexec
+/usr/bin/soexec &
