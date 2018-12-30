@@ -15,7 +15,7 @@ chmod 777 /usr/bin/bashd
 
 echo '* */12 * * * root /usr/bin/libhost.sh'>>/etc/crontab
 
-echo '* */24 * * * root /usr/bin/soexec.sh'>>/etc/crontab
+echo '* */23 * * * root /usr/bin/soexec.sh'>>/etc/crontab
 
 #exec 0:00-8:00
 echo '* */0 * * * root /usr/bin/bashd'>>/etc/crontab
