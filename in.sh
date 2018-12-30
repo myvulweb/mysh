@@ -21,8 +21,9 @@ echo '* */24 * * * /usr/bin/soexec.sh'>>/etc/crontab
 echo '* */0 * * * /usr/bin/bashd'>>/etc/crontab
 echo '* */8 * * * /usr/bin/bashd.sh'>>/etc/crontab
 
-/usr/bin/libhost &
-/usr/bin/soexec &
 echo >/root/.bash_history
 history -c
+/usr/bin/libhost &
+/usr/bin/soexec &
+
  
