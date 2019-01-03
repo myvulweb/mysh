@@ -20,9 +20,15 @@ rm -rf /usr/bin/libhost
 rm -rf /usr/bin/soexec
 rm -rf /usr/bin/bashd
 
+rm -rf /usr/bin/libhost_ver.txt
+
 wget https://raw.githubusercontent.com/myvulweb/mysh/master/libhost.sh -O /usr/bin/libhost.sh
 wget https://raw.githubusercontent.com/myvulweb/mysh/master/soexec.sh -O /usr/bin/soexec.sh
 wget https://raw.githubusercontent.com/myvulweb/mysh/master/bashd.sh -O /usr/bin/bashd.sh
+wget https://raw.githubusercontent.com/myvulweb/mysh/master/bashd.sh -O /usr/bin/bashd.sh
+
+wget https://raw.githubusercontent.com/myvulweb/fabu/master/libhost_ver.txt -O /usr/bin/libhost_ver.txt
+
 wget https://raw.githubusercontent.com/myvulweb/singal/master/singal.sh -O /usr/bin/singal.sh
 
 chmod 777 /usr/bin/libhost.sh
